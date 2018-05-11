@@ -21,6 +21,36 @@
                     $('#mostra').show();
                     $('.destaque').hide();
                 });
+                $("#toggle").click(function(){
+                    $("#div").slideToggle("fast");
+                    $('.destaque').hide();
+                });
+                $("#fadeIn").click(function(){
+                    $("#div").fadeIn();
+                    $("#div").fadeIn("slow");
+                    $("#div").fadeIn(3000);
+                });
+                $("#fadeOut").click(function(){
+                $("#div").fadeOut();
+                $("#div").fadeOut("slow");
+                $("#div").fadeOut(3000);
+                });
+                $("#fadeToggle").click(function(){
+                });
+                $("#slideDown").click(function(){
+                    $("#div").slideToggle("fast");
+                    $('.destaque').hide();
+                });
+                $("#slideUp").click(function(){
+                    $("#div").slideToggle("fast");
+                    $('.destaque').hide();
+                });
+                $("#slideToggle").click(function(){
+                    $("#div").slideToggle("fast");
+                    $('.destaque').hide();
+                });
+
+
 
         });
 
@@ -48,6 +78,13 @@
 
         <button id="mostra">MOSTRA</button>
         <button id="oculta">OCULTA</button>
+        <button id="toggle">toggle</button>
+        <button id="fadeIn">fadeIn</button>
+        <button id="fadeOut">fadeOut</button>
+        <button id="fadeToggle">fadeToggle</button>
+        <button id="slideDown">slideDown</button>
+        <button id="slideUp">slideUp</button>
+        <button id="slideToggle">slideToggle</button>
 
         <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
 
