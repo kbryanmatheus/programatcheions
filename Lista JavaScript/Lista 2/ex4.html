@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11</title>
+    <script language="JavaScript" type="text/javascript">
+        function calcular() {
+
+            var vendas, valordavenda, conta, texto, resultado;
+
+                vendas = document.getElementById('vendas').value;
+                valordavenda = 50;
+                conta = vendas * valordavenda;
+                texto = ' reais';
+                resultado = conta + texto;
+            alert(resultado);
+        }
+    </script>
+</head>
+<body>
+<input type="number" id="vendas">
+<input type="submit" value="Calcular" onclick="calcular()">
+</body>
+</html>

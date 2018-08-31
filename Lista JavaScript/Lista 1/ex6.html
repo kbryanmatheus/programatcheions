@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6</title>
+    <script language="JavaScript" type="text/javascript">
+        function calcular() {
+            var horaspordia = document.getElementById('valor').value;
+            if (horaspordia > 24) {
+                alert("Você não pode jogar mais que 24 horas por dia");
+            }else {
+                var horasdojogo = 78;
+                var conta = Math.floor((horasdojogo / horaspordia));
+                var texto = 'Você vai demorar ';
+                var texto2 = ' dias para completar o jogo';
+                var resultado = texto + conta + texto2;
+                alert(resultado);
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Quantas horas você joga por dia?</h1>
+<input type="number" id="valor" value="">
+<input type="submit" value="Calcular" onclick="calcular()">
+</body>
+</html>

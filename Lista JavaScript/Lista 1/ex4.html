@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4</title>
+    <script language="JavaScript" type="text/javascript">
+        function nota() {
+            var nota = document.getElementById('valor').value;
+            var tweetsemumano = document.getElementById('valor2').value;
+            var qtdtweetsparaperdernota = 100;
+            if (tweetsemumano < 100){
+                alert(nota);
+            }else{
+                var resultado = nota - Math.floor((tweetsemumano / 100));
+                alert(resultado);
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Digite o valor da nota:</h1>
+<input type="number" id="valor" value="" required>
+<h1>Digite a quantidade de tweets em um ano:</h1>
+<input type="number" id="valor2" value="" required>
+<input type="submit" value="Fazer Proposta" onclick="nota()">
+</body>
+</html>

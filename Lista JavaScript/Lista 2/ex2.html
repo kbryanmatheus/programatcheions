@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9</title>
+    <script language="JavaScript" type="text/javascript">
+        function calcular() {
+
+            var monstroseliminados, nivel, texto, conta, resultado;
+
+             monstroseliminados = document.getElementById('monstros').value;
+             nivel = 150;
+             texto = 'Você está no nível: ';
+             conta = Math.floor((monstroseliminados / nivel));
+             resultado = texto + conta;
+            alert(resultado);
+        }
+    </script>
+</head>
+<body>
+<input type="number" id="monstros">
+<input type="submit" onclick="calcular()">
+</body>
+</html>

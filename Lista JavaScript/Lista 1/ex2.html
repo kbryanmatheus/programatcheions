@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+    <script language="JavaScript" type="text/javascript">
+        function curtidas() {
+            var dias = document.getElementById('valor').value;
+            var linkspordia = 6;
+            var curtidasporlinknodia = 8;
+            var resultado = (linkspordia * curtidasporlinknodia) * dias;
+            alert(resultado);
+        }
+    </script>
+</head>
+<body>
+<h1>Digite a quantidade de dias:</h1>
+<input type="number" id="valor" value="">
+<input type="submit" value="Quantas Curtidas" onclick="curtidas()">
+</body>
+</html>

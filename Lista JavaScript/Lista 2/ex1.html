@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+    <script language="JavaScript" type="text/javascript">
+        function calcular() {
+
+            var livros, meses, conta, texto, resultado;
+
+             livros = document.getElementById('livros').value;
+             meses = document.getElementById('meses').value;
+             conta = Math.round((livros / meses));
+             texto = ' livros/mês';
+             resultado = conta + texto;
+            alert(resultado);
+        }
+    </script>
+</head>
+<body>
+<input type="number" id="livros">
+<input type="number" id="meses">
+<input type="submit" value="Calcular" onclick="calcular()">
+</body>
+</html>
